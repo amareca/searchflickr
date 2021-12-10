@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:layout_marginStart="8dp"
+    android:layout_marginTop="18dp"
+    tools:context=".DetailFragment">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_gravity="center"
+        android:layout_marginStart="8dp">
+
+        <ImageView
+            android:id="@+id/img_detail_image"
+            android:layout_width="140dp"
+            android:layout_height="140dp"
+            android:src="@mipmap/ic_launcher"/>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:layout_marginStart="8dp">
+
+            <TextView
+                android:id="@+id/txt_detail_title"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="20sp"
+                android:textStyle="bold"
+                tools:text="Title"/>
+
+            <TextView
+                android:id="@+id/txt_detail_author"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                tools:text="Author"
+                android:ellipsize="end"
+                android:maxLines="2"/>
+
+            <TextView
+                android:id="@+id/txt_detail_date"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                tools:text="Date"
+                android:ellipsize="end"
+                android:maxLines="2"/>
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+        <TextView
+            android:id="@+id/txt_detail_desc"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="8dp"
+            android:layout_marginTop="8dp"
+            tools:text="Lorem ipsum descripcion Lorem ipsum descripcion Lorem ipsum descripcion Lorem ipsum descripcion Lorem ipsum descripcion Lorem ipsum descripcion"/>
+
+
+</LinearLayout>
